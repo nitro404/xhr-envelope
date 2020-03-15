@@ -1,6 +1,6 @@
 {
   "name": "xhr-envelope",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "A wrapper for XMLHttpRequest to allow for simpler RESTful API transactions.",
   "main": "dist/envelope.js",
   "scripts": {
@@ -38,7 +38,7 @@
   "devDependencies": {
     "chai": "^4.1.2",
     "gulp-fabricator": "^1.0.4",
-    "sinon": "^7.4.2"
+    "sinon": "^7.5.0"
   },
   "peerDependencies": {
     "extra-utilities": "^1.1.2"

@@ -136,10 +136,7 @@ envelope.request = function(method, path, data, query, options, callback) {
 	}
 
 	var newOptions = utilities.isObject(options) ? utilities.clone(options) : { };
-	newOptions.type = formattedMethod;
-	newOptions.contentType = "application/json";
-	newOptions.dataType = "json";
-	newOptions.json = true;
+	newOptions.method = formattedMethod;
 
 	if(newOptions.timeout !== null && !Number.isInteger(newOptions.timeout)) {
 		newOptions.timeout = defaultOptions.timeout;
