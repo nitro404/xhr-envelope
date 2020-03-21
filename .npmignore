@@ -1,8 +1,8 @@
 node_modules
 bower_components
-src
 test
 coverage
+.nyc_output
 .sass-cache
 .coveralls.yml
 .travis.yml

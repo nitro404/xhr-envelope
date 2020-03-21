@@ -1,14 +1,14 @@
 {
   "name": "xhr-envelope",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A wrapper for XMLHttpRequest to allow for simpler RESTful API transactions.",
-  "main": "dist/envelope.js",
+  "main": "src/envelope.js",
   "scripts": {
     "build": "gulp build",
     "lint": "gulp lint",
     "test": "mocha",
-    "coverage": "istanbul cover node_modules/mocha/bin/_mocha --require test/**/*.js",
-    "coveralls": "npm run coverage -- --report lcovonly && cat ./coverage/lcov.info | coveralls"
+    "coverage": "nyc npm run test",
+    "coveralls": "npm run coverage && nyc report --reporter=text-lcov | coveralls"
   },
   "repository": {
     "type": "git",
@@ -37,7 +37,7 @@
   "homepage": "https://github.com/nitro404/xhr-envelope#readme",
   "devDependencies": {
     "chai": "^4.2.0",
-    "gulp-fabricator": "^1.1.0",
+    "gulp-fabricator": "^1.2.0",
     "sinon": "^9.0.1"
   },
   "peerDependencies": {

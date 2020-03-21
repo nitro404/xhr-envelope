@@ -313,4 +313,4 @@ envelope.upload = function(path, data, query, options, file, callback) {
 	return envelope.request("UPLOAD", path, fileDescriptor, query, options, callback);
 };
 
-return envelope;
+module.exports = envelope;

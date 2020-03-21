@@ -2,7 +2,7 @@
 
 global.utilities = undefined;
 
-const envelope = require("../dist/envelope.js");
+const envelope = require("../src/envelope.js");
 const utilities = require("extra-utilities");
 const chai = require("chai");
 const sinon = require("sinon");
